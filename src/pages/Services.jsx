@@ -13,7 +13,7 @@ function Hero() {
       <div className="absolute inset-0 z-0">
         <div
           className="h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: `url('${IMAGES.servicesHero}')` }}
+          style={{ backgroundImage: `url('${IMAGES.srvHero}')` }}
         />
         <div className="absolute inset-0 bg-black/60" />
       </div>

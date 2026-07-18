@@ -7,6 +7,8 @@ import {
   CONTACT_INFO,
 } from "../data";
 
+const FLEET_IMG = IMAGES.indFleet && IMAGES.indFleet.length > 20 ? IMAGES.indFleet : IMAGES.fleet;
+
 function Icon({ name, className = "" }) {
   return <span className={`material-symbols-outlined ${className}`}>{name}</span>;
 }
@@ -17,7 +19,7 @@ function Hero() {
       <div className="absolute inset-0 z-0">
         <div
           className="h-full w-full bg-cover bg-center opacity-60"
-          style={{ backgroundImage: `url('${IMAGES.industriesHero}')` }}
+          style={{ backgroundImage: `url('${IMAGES.indHero}')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-carbon-gray via-carbon-gray/80 to-transparent" />
       </div>
@@ -116,7 +118,7 @@ function FleetHub() {
         <div className="relative">
           <div className="absolute -top-10 -left-10 h-40 w-40 rounded-full bg-industrial-green/10 blur-3xl" />
           <img
-            src={IMAGES.fleet}
+            src={FLEET_IMG}
             alt="Fleet management"
             className="relative z-10 w-full rounded-lg border border-outline-variant shadow-2xl"
           />

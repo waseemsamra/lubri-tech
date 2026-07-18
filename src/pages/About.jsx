@@ -17,7 +17,7 @@ function Hero() {
     <section className="relative flex h-[614px] items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src={IMAGES.aboutHero}
+          src={IMAGES.aboutHero2}
           alt="Industrial manufacturing plant"
           className="h-full w-full object-cover grayscale-[0.2]"
         />
@@ -125,7 +125,7 @@ function GlobalPresence() {
 
         <div className="group relative aspect-video w-full overflow-hidden border border-outline-variant bg-surface md:aspect-[21/9]">
           <img
-            src={IMAGES.globalMap}
+            src={IMAGES.aboutMap}
             alt="Global distribution network"
             className="h-full w-full object-cover"
           />

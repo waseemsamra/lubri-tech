@@ -23,7 +23,7 @@ function Hero() {
       <div className="absolute inset-0 z-0">
         <div
           className="h-full w-full bg-cover bg-center brightness-75"
-          style={{ backgroundImage: `url('${IMAGES.sustainabilityHero}')` }}
+          style={{ backgroundImage: `url('${IMAGES.susHero}')` }}
         />
       </div>
       <div className="relative z-10 mx-auto w-full max-w-container-max px-margin-mobile md:px-margin-desktop">
@@ -139,7 +139,7 @@ function Pillars() {
           <div className="w-full overflow-hidden md:w-1/2">
             <div
               className="h-64 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105 md:h-full"
-              style={{ backgroundImage: `url('${IMAGES.sustainWater}')` }}
+              style={{ backgroundImage: `url('${IMAGES.susWater}')` }}
             />
           </div>
           <div className="flex w-full flex-col justify-center p-8 md:w-1/2">
@@ -283,7 +283,7 @@ function CTA() {
         <div className="w-full md:w-1/3">
           <div
             className="aspect-square w-full rounded-lg bg-cover bg-center shadow-lg"
-            style={{ backgroundImage: `url('${IMAGES.sustainReport}')` }}
+            style={{ backgroundImage: `url('${IMAGES.susReport}')` }}
           />
         </div>
         <div className="w-full text-surface md:w-2/3">

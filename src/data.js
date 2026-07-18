@@ -97,6 +97,60 @@ export const IMAGES = {
     "/images/gearAuto.jpg",
   gearAxle:
     "/images/gearAxle.jpg",
+  indHero:
+    "/images/indHero.jpg",
+  indAutomotive:
+    "/images/indAutomotive.jpg",
+  indMarine:
+    "/images/indMarine.jpg",
+  indAerospace:
+    "/images/indAerospace.jpg",
+  indIndustrial:
+    "/images/indIndustrial.jpg",
+  indFleet:
+    "/images/indFleet.jpg",
+  srvHero:
+    "/images/srvHero.jpg",
+  srvFluid:
+    "/images/srvFluid.jpg",
+  srvAudit:
+    "/images/srvAudit.jpg",
+  srvTraining:
+    "/images/srvTraining.jpg",
+  srvAuto:
+    "/images/srvAuto.jpg",
+  srvSustain:
+    "/images/srvSustain.jpg",
+  srvRemote:
+    "/images/srvRemote.jpg",
+  susHero:
+    "/images/susHero.jpg",
+  susWater:
+    "/images/susWater.jpg",
+  susEco1:
+    "/images/susEco1.jpg",
+  susEco2:
+    "/images/susEco2.jpg",
+  susEco3:
+    "/images/susEco3.jpg",
+  susReport:
+    "/images/susReport.jpg",
+  aboutHero2:
+    "/images/aboutHero2.jpg",
+  aboutMap:
+    "/images/aboutMap.jpg",
+  prodHero:
+    "/images/prodHero.jpg",
+  prodMotor:
+    "/images/prodMotor.jpg",
+  prodTruck:
+    "/images/prodTruck.jpg",
+  prodGear:
+    "/images/prodGear.jpg",
+  prodHydraulic:
+    "/images/prodHydraulic.jpg",
+  prodAntifreeze:
+    "/images/prodAntifreeze.jpg",
 };
 
 export const INDUSTRIES = [
@@ -104,7 +158,7 @@ export const INDUSTRIES = [
     title: "Automotive",
     desc: "Driving efficiency and engine longevity with advanced synthetic formulations.",
     cta: "EXPLORE",
-    image: "automotive",
+    image: "indAutomotive",
     span: "md:col-span-2 md:row-span-2",
     size: "lg",
   },
@@ -112,7 +166,7 @@ export const INDUSTRIES = [
     title: "Marine",
     desc: "",
     cta: "LEARN MORE",
-    image: "marine",
+    image: "indMarine",
     span: "",
     size: "sm",
   },
@@ -120,7 +174,7 @@ export const INDUSTRIES = [
     title: "Aerospace",
     desc: "",
     cta: "LEARN MORE",
-    image: "aerospace",
+    image: "indAerospace",
     span: "",
     size: "sm",
   },
@@ -128,7 +182,7 @@ export const INDUSTRIES = [
     title: "Industrial Manufacturing",
     desc: "Optimizing uptime and reducing maintenance costs for heavy-duty production lines.",
     cta: "EXPLORE",
-    image: "industrial",
+    image: "indIndustrial",
     span: "md:col-span-2",
     size: "md",
   },
@@ -216,7 +270,7 @@ export const PRODUCTS = [
     badgeClass: "bg-industrial-green text-safety-white",
     name: "ELAT Synth Pro 5W-30",
     desc: "HC-Synthesis high-performance motor oil for modern passenger vehicle engines with longlife requirements.",
-    image: "catalogMotorOil",
+    image: "prodMotor",
     specs: [
       { k: "API/ACEA", v: "SP / C3-21" },
       { k: "OEM", v: "MB 229.52, VW 504.00" },
@@ -229,7 +283,7 @@ export const PRODUCTS = [
     badgeClass: "bg-performance-red text-safety-white",
     name: "ELAT Truck Force 10W-40",
     desc: "Ultra-high-performance diesel oil developed for commercial fleets with extended drain intervals up to 100,000 km.",
-    image: "catalogTruck",
+    image: "prodTruck",
     specs: [
       { k: "API/ACEA", v: "CK-4 / E9-16" },
       { k: "OEM", v: "MAN M 3677, Scania LDF-4" },
@@ -242,7 +296,7 @@ export const PRODUCTS = [
     badgeClass: "",
     name: "ELAT Gear Trans GL-5",
     desc: "Hypoid gear oil for heavy-duty differentials and final drives requiring extreme pressure protection.",
-    image: "catalogGear",
+    image: "prodGear",
     specs: [
       { k: "API/ACEA", v: "GL-5 / MIL-L-2105D" },
       { k: "OEM", v: "ZF TE-ML 05A, 12E" },
@@ -255,7 +309,7 @@ export const PRODUCTS = [
     badgeClass: "",
     name: "ELAT Hydra HLP 46",
     desc: "Mineral-based hydraulic oil with high-purity additives for optimal plant performance and anti-wear protection.",
-    image: "catalogHydraulic",
+    image: "prodHydraulic",
     specs: [
       { k: "Standards", v: "DIN 51524-2 (HLP)" },
       { k: "Viscosity", v: "ISO VG 46" },
@@ -268,7 +322,7 @@ export const PRODUCTS = [
     badgeClass: "",
     name: "ELAT Frost Protect G12+",
     desc: "Silicate-free coolant concentrate for long-term corrosion protection in aluminum and cast iron engines.",
-    image: "catalogAntifreeze",
+    image: "prodAntifreeze",
     specs: [
       { k: "Type", v: "OAT (Organic Additive)" },
       { k: "OEM", v: "VW TL 774 F" },
@@ -508,42 +562,42 @@ export const SERVICE_STATS = [
 
 export const SERVICE_CARDS = [
   {
-    image: "serviceFluid",
+    image: "srvFluid",
     icon: "science",
     tag: "Analytical",
     title: "Fluid Analysis",
     desc: "Comprehensive predictive maintenance through advanced chemical and physical testing of in-service lubricants.",
   },
   {
-    image: "serviceAudit",
+    image: "srvAudit",
     icon: "assignment",
     tag: "Audit",
     title: "Plant Audits",
     desc: "Expert on-site evaluation of lubrication points, storage practices, and contamination control protocols.",
   },
   {
-    image: "serviceTraining",
+    image: "srvTraining",
     icon: "school",
     tag: "Education",
     title: "Technical Training",
     desc: "Customized education programs for maintenance teams covering lubrication theory and application best practices.",
   },
   {
-    image: "serviceAuto",
+    image: "srvAuto",
     icon: "settings_input_component",
     tag: "System Design",
     title: "Auto-Lubrication",
     desc: "Design and implementation of centralized lubrication systems to reduce manual intervention and waste.",
   },
   {
-    image: "serviceSustain",
+    image: "srvSustain",
     icon: "recycling",
     tag: "Environment",
     title: "Fluid Sustainability",
     desc: "End-to-end management of lubricant lifecycle, including filtration services and eco-compliant disposal.",
   },
   {
-    image: "serviceRemote",
+    image: "srvRemote",
     icon: "sensors",
     tag: "Monitoring",
     title: "Remote Monitoring",
@@ -591,7 +645,7 @@ export const SUSTAIN_PILLARS = {
 
 export const SUSTAIN_ECO_PRODUCTS = [
   {
-    image: "ecoProduct1",
+    image: "susEco1",
     badgeIcon: "leafy_green",
     badgeText: "98% Biodegradable",
     title: "Bio-Hydro V46",
@@ -599,7 +653,7 @@ export const SUSTAIN_ECO_PRODUCTS = [
     grade: "ISO 46 Grade",
   },
   {
-    image: "ecoProduct2",
+    image: "susEco2",
     badgeIcon: "energy_savings_leaf",
     badgeText: "Energy Efficient",
     title: "Syn-Gear E220",
@@ -607,7 +661,7 @@ export const SUSTAIN_ECO_PRODUCTS = [
     grade: "ISO 220 Grade",
   },
   {
-    image: "ecoProduct3",
+    image: "susEco3",
     badgeIcon: "science",
     badgeText: "Non-Toxic",
     title: "Eco-Grease GP2",

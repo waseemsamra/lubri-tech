@@ -20,7 +20,7 @@ function CatalogHero() {
     <section className="relative flex h-[400px] w-full items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src={IMAGES.productsHero}
+          src={IMAGES.prodHero}
           alt="Industrial Gear Oil Application"
           className="h-full w-full object-cover brightness-[0.4]"
         />
@@ -184,7 +184,7 @@ function CatalogGrid() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {PRODUCTS.map((product) => (
           <ProductCard key={product.slug} product={product} />
         ))}
@@ -247,7 +247,7 @@ function BulkCTA() {
     <section className="mx-auto max-w-container-max px-margin-mobile py-section-gap md:px-margin-desktop">
       <div className="relative flex flex-col items-center gap-12 overflow-hidden rounded-xl bg-industrial-green p-8 text-safety-white md:flex-row md:p-16">
         <div className="absolute right-0 top-0 h-full w-1/2 opacity-10">
-          <img src={IMAGES.catalogTruck} alt="Truck Overlay" className="h-full w-full object-cover" />
+          <img src={IMAGES.prodTruck} alt="Truck Overlay" className="h-full w-full object-cover" />
         </div>
         <div className="relative z-10 flex-1">
           <h2 className="mb-6 font-display-lg leading-tight text-headline-lg md:text-display-lg">
