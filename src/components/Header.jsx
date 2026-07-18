@@ -23,7 +23,7 @@ function AdvisoryMenu() {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      <button className="flex items-center gap-1 whitespace-nowrap font-label-bold text-label-bold text-on-surface-variant transition-colors duration-200 hover:text-primary">
+      <button className="flex items-center gap-1 whitespace-nowrap font-label-bold text-label-bold text-safety-white transition-colors duration-200 hover:text-industrial-green">
         Product Advisory
         <Icon name="expand_more" className="text-[18px]" />
       </button>
@@ -34,7 +34,7 @@ function AdvisoryMenu() {
               <Link
                 key={item.label}
                 to={item.route || `/products/${item.slug}`}
-                className="block px-4 py-2 font-body-md text-on-surface transition-colors hover:bg-surface-container-low hover:text-primary"
+                className="block px-4 py-2 font-body-md text-on-surface transition-colors hover:bg-surface-container-low hover:text-industrial-green"
               >
                 {item.label}
               </Link>
@@ -54,7 +54,7 @@ function BusinessMenu() {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      <button className="flex items-center gap-1 whitespace-nowrap font-label-bold text-label-bold text-on-surface-variant transition-colors duration-200 hover:text-primary">
+      <button className="flex items-center gap-1 whitespace-nowrap font-label-bold text-label-bold text-safety-white transition-colors duration-200 hover:text-industrial-green">
         Business Customers
         <Icon name="expand_more" className="text-[18px]" />
       </button>
@@ -65,7 +65,7 @@ function BusinessMenu() {
               <Link
                 key={item.label}
                 to={item.route}
-                className="block px-4 py-2 font-body-md text-on-surface transition-colors hover:bg-surface-container-low hover:text-primary"
+                className="block px-4 py-2 font-body-md text-on-surface transition-colors hover:bg-surface-container-low hover:text-industrial-green"
               >
                 {item.label}
               </Link>
@@ -95,8 +95,8 @@ export default function Header() {
       <Link
         key={link}
         to={to}
-        className={`font-label-bold text-label-bold transition-colors duration-200 hover:text-primary ${
-          active ? "border-b-2 border-primary pb-1 text-primary" : "text-on-surface-variant"
+        className={`font-label-bold text-label-bold transition-colors duration-200 hover:text-industrial-green ${
+          active ? "border-b-2 border-industrial-green pb-1 text-industrial-green" : "text-safety-white"
         }`}
       >
         {link}
@@ -106,8 +106,8 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full bg-surface transition-shadow ${
-        scrolled ? "shadow-md" : "border-b border-outline-variant"
+      className={`sticky top-0 z-50 w-full bg-black text-safety-white transition-shadow ${
+        scrolled ? "shadow-md" : "border-b border-white/10"
       }`}
     >
       <nav className="mx-auto flex w-full max-w-container-max items-center justify-between px-margin-mobile py-4 md:px-margin-desktop">
@@ -130,7 +130,7 @@ export default function Header() {
         <div className="flex flex-shrink-0 items-center gap-4">
           <button
             aria-label="Language"
-            className="rounded-full p-2 text-on-surface-variant transition-colors hover:bg-surface-container-highest"
+            className="rounded-full p-2 text-safety-white transition-colors hover:bg-surface-container-highest hover:text-industrial-green"
           >
             <Icon name="language" />
           </button>
@@ -144,7 +144,7 @@ export default function Header() {
           <button
             aria-label="Toggle menu"
             onClick={() => setMenuOpen((v) => !v)}
-            className="text-on-surface md:hidden"
+            className="text-safety-white md:hidden"
           >
             <Icon name={menuOpen ? "close" : "menu"} />
           </button>
@@ -164,7 +164,7 @@ export default function Header() {
                         key={item.label}
                         to={item.route || `/products/${item.slug}`}
                         onClick={() => setMenuOpen(false)}
-                        className="block py-1 font-body-md text-on-surface-variant transition-colors hover:text-primary"
+                        className="block py-1 font-body-md text-on-surface-variant transition-colors hover:text-industrial-green"
                       >
                         {item.label}
                       </Link>
@@ -183,7 +183,7 @@ export default function Header() {
                         key={item.label}
                         to={item.route}
                         onClick={() => setMenuOpen(false)}
-                        className="block py-1 font-body-md text-on-surface-variant transition-colors hover:text-primary"
+                        className="block py-1 font-body-md text-on-surface-variant transition-colors hover:text-industrial-green"
                       >
                         {item.label}
                       </Link>

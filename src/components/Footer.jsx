@@ -8,7 +8,7 @@ function Icon({ name, className = "" }) {
 
 export default function Footer({ columns = FOOTER_COLUMNS }) {
   return (
-    <footer className="w-full bg-inverse-surface">
+    <footer className="w-full bg-black">
       <div className="mx-auto grid max-w-container-max grid-cols-1 gap-gutter px-margin-mobile py-section-gap text-surface md:grid-cols-4 md:px-margin-desktop">
         <div className="md:col-span-1">
           <div className="mb-6 font-headline-md text-headline-md font-bold tracking-tight text-surface-container-lowest">
