@@ -80,7 +80,7 @@ function Hero() {
       <div className="relative h-[500px] md:col-span-6">
         <div className="absolute inset-0 overflow-hidden rounded-xl border border-outline-variant bg-surface-container shadow-sm">
           <img
-            src={IMAGES.fleet}
+            src={IMAGES.truckHeroHeavy}
             alt="Heavy-duty commercial truck on a highway during golden hour"
             className="h-full w-full object-cover"
           />
@@ -118,7 +118,7 @@ function BentoGrid() {
           </div>
           <div className="mt-auto h-48 overflow-hidden rounded-lg">
             <img
-              src={IMAGES.catalogMotorOil}
+              src={IMAGES.truckOilGears}
               alt="Synthetic oil flowing through metal gears"
               className="h-full w-full object-cover"
             />
@@ -224,7 +224,7 @@ function ProtectionSection() {
       <div className="order-2 md:order-1">
         <div className="h-[450px] overflow-hidden rounded-lg border border-outline-variant">
           <img
-            src={IMAGES.catalogTruck}
+            src={IMAGES.truckDieselPiston}
             alt="Cross-section of heavy-duty diesel engine piston"
             className="h-full w-full object-cover"
           />

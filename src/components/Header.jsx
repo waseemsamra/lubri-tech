@@ -22,7 +22,7 @@ function AdvisoryMenu() {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      <button className="flex items-center gap-1 font-label-bold text-label-bold text-on-surface-variant transition-colors duration-200 hover:text-primary">
+      <button className="flex items-center gap-1 whitespace-nowrap font-label-bold text-label-bold text-on-surface-variant transition-colors duration-200 hover:text-primary">
         Product Advisory
         <Icon name="expand_more" className="text-[18px]" />
       </button>
@@ -79,21 +79,21 @@ export default function Header() {
       }`}
     >
       <nav className="mx-auto flex w-full max-w-container-max items-center justify-between px-margin-mobile py-4 md:px-margin-desktop">
-        <div className="flex items-center gap-6 md:gap-8">
+        <div className="flex items-center gap-4 md:gap-6">
           <Link
             to="/"
-            className="font-headline-md text-headline-md font-bold tracking-tight text-primary"
+            className="-ml-6 font-headline-lg text-headline-lg font-bold tracking-tight text-primary"
           >
             LUBRI-TECH
           </Link>
-          <div className="hidden items-center gap-6 md:flex">
+          <div className="hidden items-center gap-4 md:flex">
             {NAV_LINKS.map((link) =>
               link === "Product Advisory" ? <AdvisoryMenu key={link} /> : renderNavItem(link)
             )}
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-shrink-0 items-center gap-4">
           <div className="hidden items-center rounded bg-surface-container-low px-4 py-2 shadow-inner lg:flex">
             <Icon name="search" className="text-[20px] text-outline" />
             <input
@@ -109,9 +109,9 @@ export default function Header() {
           </button>
           <Link
             to="#"
-            className="rounded bg-industrial-green px-4 py-2 font-label-bold text-label-bold text-white transition-all hover:bg-primary active:opacity-80 md:px-6"
+            className="whitespace-nowrap rounded bg-industrial-green px-4 py-2 font-label-bold text-label-bold text-white transition-all hover:bg-primary active:opacity-80 md:px-6"
           >
-            Product Finder
+            Industrial Portal
           </Link>
 
           <button

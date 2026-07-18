@@ -1,8 +1,14 @@
 export const IMAGES = {
   hero:
-    "/images/business.jpg",
+    "/images/carEngineHero.jpg",
   business:
     "/images/industrial.jpg",
+  carEngineHero:
+    "/images/carEngineHero.jpg",
+  carOilPour:
+    "/images/carOilPourHero.jpg",
+  carEngineInternals:
+    "/images/carEngineInternals.jpg",
   motorists:
     "/images/automotive.jpg",
   sustainability:
@@ -83,6 +89,12 @@ export const IMAGES = {
     "/images/hydraulicHero.jpg",
   hydraulicOxidation:
     "/images/hydraulicOxidation.jpg",
+  truckHeroHeavy:
+    "/images/truckHeroHeavy.jpg",
+  truckOilGears:
+    "/images/truckOilGears.jpg",
+  truckDieselPiston:
+    "/images/truckDieselPiston.jpg",
   antifreezeHero:
     "/images/antifreezeHero.jpg",
   antifreezeCorrosion:
@@ -151,6 +163,12 @@ export const IMAGES = {
     "/images/prodHydraulic.jpg",
   prodAntifreeze:
     "/images/prodAntifreeze.jpg",
+  carHero:
+    "/images/carHero.jpg",
+  carOilPour:
+    "/images/carOilPour.jpg",
+  carEngine:
+    "/images/carEngine.jpg",
 };
 
 export const INDUSTRIES = [
@@ -498,7 +516,7 @@ export const NAV_LINKS = [
 ];
 
 export const ADVISORY_SUBMENUS = [
-  { label: "Car Motor Oil Info", slug: "car-motor-oil", route: "/technical-advisory" },
+  { label: "Car Motor Oil Info", slug: "car-motor-oil", route: "/car-motor" },
   { label: "Truck Motor Oil Info", slug: "truck-force-10w-40", route: "/heavy-duty-fleet" },
   { label: "Gear Oil Info", slug: "gear-trans-gl-5", route: "/gear-oil" },
   { label: "Hydraulic Oil Info", slug: "hydra-hlp-46", route: "/hydraulic-oil" },

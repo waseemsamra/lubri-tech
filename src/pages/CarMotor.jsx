@@ -189,7 +189,7 @@ function ViscosityBento() {
           </div>
           <div className="mt-8 border-t border-white/10 pt-8">
             <img
-              src={IMAGES.catalogMotorOil}
+              src={IMAGES.carOilPour}
               alt="Synthetic motor oil pour"
               className="mb-4 h-32 w-full rounded object-cover"
             />
@@ -284,7 +284,7 @@ function WearProtection() {
     <section className="grid items-center gap-16 px-margin-mobile py-section-gap md:grid-cols-2 md:px-margin-desktop">
       <div className="relative">
         <img
-          src={IMAGES.automotive}
+          src={IMAGES.carEngineInternals}
           alt="Engine internals with protective lubricant film"
           className="aspect-square w-full rounded-xl object-cover shadow-lg"
         />
@@ -344,9 +344,9 @@ function CtaSection() {
   );
 }
 
-export default function TechnicalAdvisory() {
+export default function CarMotor() {
   return (
-    <main className="pt-20">
+    <main className="mx-auto max-w-container-max pt-20">
       <Hero />
       <ViscosityBento />
       <OemApprovals />

@@ -6,7 +6,7 @@
 @theme {
   --color-tertiary-fixed-dim: #c8c6c6;
   --color-inverse-surface: #2c322b;
-  --color-background: #f5fbf1;
+  --color-background: #ffffff;
   --color-on-primary-fixed-variant: #7a5200;
   --color-surface-container: #e9f0e6;
   --color-on-error: #ffffff;
@@ -18,7 +18,7 @@
   --color-on-tertiary: #ffffff;
   --color-error-container: #ffdad6;
   --color-surface-dim: #d5dcd2;
-  --color-surface-subtle: #f4f7f5;
+  --color-surface-subtle: #ffffff;
   --color-on-secondary: #ffffff;
   --color-surface-container-lowest: #ffffff;
   --color-on-primary-fixed: #1a1200;
@@ -35,7 +35,7 @@
   --color-tertiary-container: #757474;
   --color-inverse-primary: #f7a61c;
   --color-performance-red: #ed1c24;
-  --color-surface-bright: #f5fbf1;
+  --color-surface-bright: #ffffff;
   --color-secondary-container: #e71520;
   --color-on-surface-variant: #3e4a3e;
   --color-secondary-fixed: #ffdad6;
@@ -46,19 +46,16 @@
   --color-error: #ba1a1a;
   --color-on-primary: #ffffff;
   --color-primary: #f7a61c;
-  --color-surface: #f5fbf1;
+  --color-surface: #ffffff;
   --color-on-tertiary-fixed: #1b1c1c;
   --color-border-muted: #d1d5db;
   --color-surface-container-high: #e3eae0;
   --color-inverse-on-surface: #ecf3e8;
   --color-surface-tint: #f7a61c;
-  --color-primary-fixed-dim: #f7a61c;
   --color-tertiary: #5c5c5c;
   --color-secondary-fixed-dim: #ffb4ab;
   --color-on-secondary-fixed: #410002;
   --color-primary-container: #f7a61c;
-
-  --radius-default: 0.125rem;
   --radius-lg: 0.25rem;
   --radius-xl: 0.5rem;
   --radius-full: 0.75rem;
