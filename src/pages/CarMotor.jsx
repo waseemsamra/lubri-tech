@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { IMAGES } from "../data";
 
 function Icon({ name, className = "" }) {
@@ -106,22 +107,28 @@ const FRICTION_BENEFITS = [
 
 function Hero() {
   return (
-    <section className="relative flex h-[600px] items-center overflow-hidden">
+    <section className="relative flex h-[728px] items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-on-surface/90 to-on-surface/40 z-10" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#1a1033]/55 via-[#2a0a14]/30 to-[#3a2a05]/25" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-performance-red/20 via-transparent to-[#f7c948]/20" />
+        <div className="absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-black/70 to-transparent" />
         <div
           className="h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: `url('${IMAGES.hero}')` }}
+          style={{ backgroundImage: `url('${IMAGES.image2}')` }}
         />
       </div>
-      <div className="relative z-20 mx-auto w-full max-w-container-max px-margin-mobile text-safety-white md:px-margin-desktop max-w-3xl">
+
+      <div className="absolute inset-y-0 left-0 z-10 w-2/3 bg-gradient-to-r from-black/55 to-transparent md:w-1/2" />
+      <div className="relative z-20 mx-auto w-full max-w-container-max px-margin-mobile text-safety-white md:px-margin-desktop">
         <span className="mb-4 inline-block rounded bg-industrial-green px-3 py-1 font-label-bold text-label-bold">
           Technical Advisory
         </span>
         <h1 className="mb-6 font-display-lg text-display-lg">
-          Engineered Fluid Mastery for Modern Propulsion
+          Engineered Fluid Mastery
+          <br />
+          for Modern Propulsion
         </h1>
-        <p className="mb-8 font-body-lg text-body-lg text-surface-variant">
+        <p className="mb-8 max-w-xl font-body-lg text-body-lg text-surface-variant">
           Detailed technical insights into viscosity management, API/ACEA
           compliance, and OEM certification for high-stress passenger vehicle
           engines.
@@ -133,6 +140,58 @@ function Hero() {
           <button className="rounded border border-safety-white px-8 py-4 font-label-bold text-label-bold text-safety-white transition-all hover:bg-safety-white hover:text-on-surface">
             OEM Approvals
           </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ShopByNeed() {
+  const navigate = useNavigate();
+  const go = (filter) => navigate(`/products?filter=${encodeURIComponent(filter)}`);
+
+  const NEEDS = [
+    { label: "Shop by Need", desc: "Get to the right oil, coolant, or service fluid without hunting through the menu.", icon: "tune", cta: false },
+    { label: "Shop by Vehicle Type", desc: "Cars, trucks, marine, equipment", icon: "directions_car", filter: "Vehicle Type" },
+    { label: "Shop by Viscosity", desc: "Start with 5W-30 motor oil", icon: "oil_barrel", filter: "Viscosity" },
+    { label: "Shop Motor Oil", desc: "Synthetic, blend, conventional", icon: "local_gas_station", filter: "Motor Oil" },
+    { label: "Shop Gear Oil", desc: "GL-4, GL-5, synthetic gear lube", icon: "settings", filter: "Gear Oil" },
+    { label: "Shop Coolant", desc: "Antifreeze by color and vehicle", icon: "ac_unit", filter: "Coolant" },
+    { label: "Best Sellers & Deals", desc: "Top products and current offers", icon: "local_offer", filter: "Best Sellers" },
+  ];
+
+  return (
+    <section className="bg-surface-subtle px-margin-mobile py-section-gap md:px-margin-desktop">
+      <div className="mx-auto max-w-container-max">
+        <div className="mb-10 text-center">
+          <h2 className="mb-3 font-headline-lg text-headline-lg text-on-surface">
+            Shop by Need
+          </h2>
+          <p className="mx-auto max-w-2xl font-body-md text-on-surface-variant">
+            Get to the right oil, coolant, or service fluid without hunting through
+            the menu.
+          </p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-4">
+          {NEEDS.filter((n) => !n.cta).map((n) => (
+            <button
+              key={n.label}
+              onClick={() => go(n.filter)}
+              className="group flex w-full flex-col items-start gap-2 rounded-xl border border-outline-variant bg-safety-white p-5 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-industrial-green hover:shadow-md sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-1.1rem)]"
+            >
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary-container text-on-primary-container">
+                <Icon name={n.icon} />
+              </div>
+              <h3 className="font-headline-md text-headline-md text-on-surface">
+                {n.label}
+              </h3>
+              <p className="font-body-sm text-on-surface-variant">{n.desc}</p>
+              <span className="mt-1 inline-flex items-center gap-1 font-label-bold text-industrial-green">
+                Shop now
+                <Icon name="arrow_forward" className="text-sm transition-transform group-hover:translate-x-1" />
+              </span>
+            </button>
+          ))}
         </div>
       </div>
     </section>
@@ -171,18 +230,26 @@ function ViscosityBento() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between rounded-xl bg-carbon-gray p-spacing-component-gap text-safety-white md:col-span-4">
+        <div className="flex flex-col justify-between rounded-xl bg-carbon-gray p-spacing-component-gap text-left text-safety-white md:col-span-4">
           <div>
-            <h2 className="mb-4 font-headline-md text-headline-md">
+            <h2 className="mb-4 text-left font-headline-md text-headline-md">
               Global Standards
             </h2>
-            <div className="space-y-6">
+            <div className="space-y-4">
               {GLOBAL_STANDARDS.map((item) => (
-                <div key={item.code}>
-                  <div className="mb-1 font-label-bold opacity-70">
-                    {item.code}
+                <div
+                  key={item.code}
+                  className="flex gap-3 rounded-lg border border-white/10 bg-white/5 p-4"
+                >
+                  <Icon name="verified" className="mt-0.5 text-industrial-green" />
+                  <div>
+                    <div className="mb-1 font-label-bold text-safety-white">
+                      {item.code}
+                    </div>
+                    <p className="font-body-sm text-surface-variant">
+                      {item.desc}
+                    </p>
                   </div>
-                  <p className="text-body-sm">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -346,13 +413,16 @@ function CtaSection() {
 
 export default function CarMotor() {
   return (
-    <main className="mx-auto max-w-container-max pt-20">
+    <main>
       <Hero />
-      <ViscosityBento />
-      <OemApprovals />
-      <LabTable />
-      <WearProtection />
-      <CtaSection />
+      <ShopByNeed />
+      <div className="mx-auto max-w-container-max">
+        <ViscosityBento />
+        <OemApprovals />
+        <LabTable />
+        <WearProtection />
+        <CtaSection />
+      </div>
     </main>
   );
 }

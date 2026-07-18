@@ -32,7 +32,7 @@ function Hero() {
             Pioneering High-Performance Industrial Lubrication
           </h1>
           <p className="max-w-xl font-body-lg text-body-lg text-surface-variant">
-            Velocity Industrial, now LUBRI-TECH, has been the backbone of heavy
+            Velocity Industrial, now MaxDrive, has been the backbone of heavy
             machinery for over two decades, delivering precision-engineered
             solutions for the world's most demanding environments.
           </p>
@@ -186,8 +186,8 @@ const TIMELINE = [
   },
   {
     year: "TODAY",
-    title: "The LUBRI-TECH Era",
-    desc: "Rebranding to LUBRI-TECH to reflect our evolution into a holistic technical solutions provider.",
+    title: "The MaxDrive Era",
+    desc: "Rebranding to MaxDrive to reflect our evolution into a holistic technical solutions provider.",
     icon: "rocket_launch",
     color: "bg-primary",
     big: true,

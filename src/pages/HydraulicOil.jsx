@@ -315,7 +315,7 @@ function ResourceCards() {
 
 export default function HydraulicOil() {
   return (
-    <main className="pt-20">
+    <main>
       <Hero />
       <Breadcrumbs />
       <BentoGrid />

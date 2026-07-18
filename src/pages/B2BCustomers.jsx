@@ -60,7 +60,7 @@ const BENEFITS = [
   },
   {
     title: "Premium Quality",
-    desc: "High-quality lubricants of the LUBRI-TECH brand – Made in Germany with all common OEM approvals.",
+    desc: "High-quality lubricants of the MaxDrive brand – Made in Germany with all common OEM approvals.",
     icon: "verified",
     grad: "from-industrial-green to-primary",
   },
@@ -129,7 +129,7 @@ function Hero() {
             Become Our <span className="text-surface-container-lowest">B2B Partner</span>
           </h1>
           <p className="mb-8 max-w-3xl font-body-lg text-body-lg text-surface-container-lowest/90 opacity-90">
-            Benefit from premium lubricants of the LUBRI-TECH brand – directly from the
+            Benefit from premium lubricants of the MaxDrive brand – directly from the
             manufacturer. Attractive conditions for workshops, dealers and bulk buyers.
           </p>
           <div className="flex flex-wrap gap-4">
@@ -297,7 +297,7 @@ function Faq() {
 
 export default function B2BCustomers() {
   return (
-    <main className="pt-20">
+    <main>
       <Hero />
       <Audiences />
       <Benefits />

@@ -65,7 +65,7 @@ const ARCHITECTURES = [
 
 function Hero() {
   return (
-    <section className="relative mb-section-gap flex h-[500px] items-center overflow-hidden rounded-xl bg-carbon-gray">
+    <section className="relative mb-section-gap flex h-[500px] items-center overflow-hidden bg-carbon-gray">
       <div className="absolute inset-0 z-0">
         <div
           className="h-full w-full bg-cover bg-center opacity-60"
@@ -288,11 +288,13 @@ function CtaSection() {
 
 export default function GearOil() {
   return (
-    <main className="mx-auto max-w-container-max px-margin-mobile py-12 md:px-margin-desktop pt-20">
+    <main>
       <Hero />
-      <SpecsBento />
-      <Architectures />
-      <CtaSection />
+      <div className="mx-auto max-w-container-max px-margin-mobile py-12 md:px-margin-desktop">
+        <SpecsBento />
+        <Architectures />
+        <CtaSection />
+      </div>
     </main>
   );
 }

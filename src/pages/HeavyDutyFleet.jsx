@@ -287,7 +287,7 @@ function CtaSection() {
 
 export default function HeavyDutyFleet() {
   return (
-    <main className="mx-auto max-w-container-max px-margin-desktop py-base pt-20">
+    <main className="mx-auto max-w-container-max px-margin-desktop py-base">
       <Hero />
       <BentoGrid />
       <ProductTable />

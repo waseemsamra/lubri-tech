@@ -12,7 +12,7 @@ export default function Footer({ columns = FOOTER_COLUMNS }) {
       <div className="mx-auto grid max-w-container-max grid-cols-1 gap-gutter px-margin-mobile py-section-gap text-surface md:grid-cols-4 md:px-margin-desktop">
         <div className="md:col-span-1">
           <div className="mb-6 font-headline-md text-headline-md font-bold tracking-tight text-surface-container-lowest">
-            LUBRI-TECH
+            MAXDRIVE
           </div>
           <p className="mb-6 font-body-sm text-body-sm text-surface-variant">
             Driving innovation in lubrication for over 25 years. Engineering the
@@ -82,7 +82,7 @@ export default function Footer({ columns = FOOTER_COLUMNS }) {
 
       <div className="mx-auto max-w-container-max border-t border-on-surface-variant/10 px-margin-mobile py-8 md:px-margin-desktop">
         <div className="flex flex-col items-center justify-between gap-4 font-body-sm text-body-sm text-surface-variant md:flex-row">
-          <p>© 2024 Lubri-Tech Industrial Solutions. All rights reserved.</p>
+          <p>© 2024 MaxDrive Industrial Solutions. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-safety-white">
               Sitemap

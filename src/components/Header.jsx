@@ -116,7 +116,7 @@ export default function Header() {
             to="/"
             className="-ml-6 font-headline-lg text-headline-lg font-bold tracking-tight text-primary"
           >
-            LUBRI-TECH
+            MAXDRIVE
           </Link>
           <div className="hidden items-center gap-4 md:flex">
             {NAV_LINKS.map((link) => {

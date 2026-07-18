@@ -1,4 +1,10 @@
 export const IMAGES = {
+  bannerLubri1:
+    "/images/bannnerlubri1.png",
+  bannerLubri2:
+    "/images/bannerlubri2.png",
+  bannerLubri3:
+    "/images/bannerlubri3.png",
   hero:
     "/images/carEngineHero.jpg",
   business:
@@ -9,6 +15,18 @@ export const IMAGES = {
     "/images/carOilPourHero.jpg",
   carEngineInternals:
     "/images/carEngineInternals.jpg",
+  hdEngineColorful:
+    "/images/hdEngineColorful.jpg",
+  hdOilPour:
+    "/images/hdOilPour.jpg",
+  hdOilBottles:
+    "/images/hdOilBottles.jpg",
+  hdTurboEngine:
+    "/images/hdTurboEngine.jpg",
+  image2:
+    "/images/image2.jpg",
+  oil1:
+    "/images/oil1.jpg",
   motorists:
     "/images/automotive.jpg",
   sustainability:
@@ -277,7 +295,7 @@ export const FLEET_BENEFITS = [
 
 export const CONTACT_INFO = [
   { icon: "phone_in_talk", label: "Global Support Line", value: "+44 (0) 20 8846 3000" },
-  { icon: "alternate_email", label: "Business Inquiries", value: "solutions@lubri-tech.com" },
+  { icon: "alternate_email", label: "Business Inquiries",     value: "solutions@maxdrive.com" },
   { icon: "pin_drop", label: "Corporate Headquarters", value: "Technological Centre, Whitchurch Hill, UK" },
 ];
 
@@ -286,7 +304,7 @@ export const PRODUCTS = [
     slug: "synth-pro-5w-30",
     badge: "Best Seller",
     badgeClass: "bg-industrial-green text-safety-white",
-    name: "ELAT Synth Pro 5W-30",
+    name: "Velocity Synth Pro 5W-30",
     desc: "HC-Synthesis high-performance motor oil for modern passenger vehicle engines with longlife requirements.",
     image: "prodMotor",
     specs: [
@@ -299,7 +317,7 @@ export const PRODUCTS = [
     slug: "truck-force-10w-40",
     badge: "Heavy Duty",
     badgeClass: "bg-performance-red text-safety-white",
-    name: "ELAT Truck Force 10W-40",
+    name: "Velocity Truck Force 10W-40",
     desc: "Ultra-high-performance diesel oil developed for commercial fleets with extended drain intervals up to 100,000 km.",
     image: "prodTruck",
     specs: [
@@ -312,7 +330,7 @@ export const PRODUCTS = [
     slug: "gear-trans-gl-5",
     badge: "",
     badgeClass: "",
-    name: "ELAT Gear Trans GL-5",
+    name: "Velocity Gear Trans GL-5",
     desc: "Hypoid gear oil for heavy-duty differentials and final drives requiring extreme pressure protection.",
     image: "prodGear",
     specs: [
@@ -325,7 +343,7 @@ export const PRODUCTS = [
     slug: "hydra-hlp-46",
     badge: "",
     badgeClass: "",
-    name: "ELAT Hydra HLP 46",
+    name: "Velocity Hydra HLP 46",
     desc: "Mineral-based hydraulic oil with high-purity additives for optimal plant performance and anti-wear protection.",
     image: "prodHydraulic",
     specs: [
@@ -338,7 +356,7 @@ export const PRODUCTS = [
     slug: "frost-protect-g12",
     badge: "",
     badgeClass: "",
-    name: "ELAT Frost Protect G12+",
+    name: "Velocity Frost Protect G12+",
     desc: "Silicate-free coolant concentrate for long-term corrosion protection in aluminum and cast iron engines.",
     image: "prodAntifreeze",
     specs: [

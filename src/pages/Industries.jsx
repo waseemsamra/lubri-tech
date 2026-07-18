@@ -373,7 +373,7 @@ function ContactSection() {
 
 export default function Industries() {
   return (
-    <main className="pt-20">
+    <main>
       <Hero />
       <SectorGrid />
       <FleetHub />

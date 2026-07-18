@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useState } from "react";
 import {
   IMAGES,
@@ -29,7 +29,7 @@ function CatalogHero() {
       <div className="relative z-10 mx-auto w-full max-w-container-max px-margin-mobile md:px-margin-desktop">
         <div className="max-w-2xl">
           <span className="mb-4 inline-block rounded bg-industrial-green px-3 py-1 font-label-bold text-label-bold text-safety-white">
-            ELAT™ PREMIUM LINE
+            VELOCITY PREMIUM LINE
           </span>
           <h1 className="mb-6 font-display-lg text-display-lg leading-tight text-safety-white">
             Industrial Lubricant Solutions
@@ -105,7 +105,7 @@ function FilterSidebar() {
         <Icon name="description" className="mb-4 text-industrial-green" />
         <h4 className="mb-2 font-headline-md text-headline-md">Technical Data</h4>
         <p className="mb-4 font-body-sm text-body-sm text-on-surface-variant">
-          Access detailed PDS and MSDS documentation for all ELAT products.
+              Access detailed PDS and MSDS documentation for all Velocity products.
         </p>
         <a className="font-label-bold text-industrial-green hover:underline" href="#">
           Download Archive →
@@ -183,6 +183,26 @@ function ExportCard() {
 }
 
 function CatalogGrid() {
+  const [searchParams] = useSearchParams();
+  const activeFilter = searchParams.get("filter");
+
+  const keywordMap = {
+    "Motor Oil": ["synth", "motor", "5w", "10w"],
+    "Gear Oil": ["gear"],
+    Coolant: ["frost", "coolant", "antifreeze"],
+    Viscosity: ["5w", "10w", "15w", "20w", "75w", "80w"],
+    "Vehicle Type": ["truck", "motor", "gear", "hydra", "frost"],
+    "Best Sellers": ["best seller"],
+  };
+
+  const filtered = activeFilter
+    ? PRODUCTS.filter((p) => {
+        const hay = `${p.name} ${p.slug} ${p.desc}`.toLowerCase();
+        const keys = keywordMap[activeFilter] || [activeFilter.toLowerCase()];
+        return keys.some((k) => hay.includes(k));
+      })
+    : PRODUCTS;
+
   return (
     <div className="flex-1">
       <div className="mb-8 flex items-end justify-between border-b border-outline-variant pb-4">
@@ -191,7 +211,9 @@ function CatalogGrid() {
             Core Product Range
           </h2>
           <p className="font-body-md text-on-surface-variant">
-            Showing 12 of 48 technical lubricant solutions
+            {activeFilter
+              ? `Filtered by "${activeFilter}" — ${filtered.length} result(s)`
+              : "Showing 12 of 48 technical lubricant solutions"}
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -205,9 +227,15 @@ function CatalogGrid() {
       </div>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        {PRODUCTS.map((product) => (
-          <ProductCard key={product.slug} product={product} />
-        ))}
+        {filtered.length > 0 ? (
+          filtered.map((product) => (
+            <ProductCard key={product.slug} product={product} />
+          ))
+        ) : (
+          <p className="font-body-md text-on-surface-variant">
+            No products match this filter yet.
+          </p>
+        )}
         <ExportCard />
       </div>
     </div>

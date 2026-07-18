@@ -329,7 +329,7 @@ function CtaSection() {
 
 export default function Antifreeze() {
   return (
-    <main className="pt-20">
+    <main>
       <Hero />
       <PillarsBento />
       <ChemistryDeepDive />

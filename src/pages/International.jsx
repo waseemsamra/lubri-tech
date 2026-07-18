@@ -133,7 +133,7 @@ function Hero() {
             </h1>
             <p className="mb-8 font-body-lg text-body-lg text-surface-container-lowest/90 opacity-90">
               Premium lubricants from Germany – global export. Become a partner for high-quality
-              LUBRI-TECH brand products.
+              MaxDrive brand products.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -188,7 +188,7 @@ function WhySection() {
       <div className="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-headline-lg text-headline-lg text-on-surface">
-            Why LUBRI-TECH?
+            Why MaxDrive?
           </h2>
           <p className="mx-auto max-w-2xl font-body-md text-on-surface-variant">
             Your reliable partner for premium lubricants from Germany – trusted worldwide by international distributors.
@@ -289,7 +289,7 @@ function ProductsSection() {
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-headline-lg text-headline-lg text-on-surface">Products Available for Export</h2>
           <p className="mx-auto max-w-2xl font-body-md text-on-surface-variant">
-            Our complete range of LUBRI-TECH brand lubricants – all Made in Germany.
+            Our complete range of MaxDrive brand lubricants – all Made in Germany.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -403,7 +403,7 @@ function ContactSection() {
 
 export default function International() {
   return (
-    <main className="pt-20">
+    <main>
       <Hero />
       <Notice />
       <WhySection />

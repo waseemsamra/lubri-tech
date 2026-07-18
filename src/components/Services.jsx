@@ -21,7 +21,7 @@ export default function Services() {
               How can we help you?
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
-              Lubri-Tech’s range of products and technical support is designed to
+              MaxDrive’s range of products and technical support is designed to
               ensure your operations run smoothly, sustainably and efficiently.
             </p>
           </div>
