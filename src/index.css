@@ -7,11 +7,11 @@
   --color-tertiary-fixed-dim: #c8c6c6;
   --color-inverse-surface: #2c322b;
   --color-background: #f5fbf1;
-  --color-on-primary-fixed-variant: #005324;
+  --color-on-primary-fixed-variant: #7a5200;
   --color-surface-container: #e9f0e6;
   --color-on-error: #ffffff;
   --color-safety-white: #ffffff;
-  --color-primary-fixed: #86fba0;
+  --color-primary-fixed: #f7a61c;
   --color-on-background: #171d17;
   --color-on-secondary-container: #fffbff;
   --color-surface-container-low: #eff6eb;
@@ -21,7 +21,7 @@
   --color-surface-subtle: #f4f7f5;
   --color-on-secondary: #ffffff;
   --color-surface-container-lowest: #ffffff;
-  --color-on-primary-fixed: #00210a;
+  --color-on-primary-fixed: #1a1200;
   --color-on-error-container: #93000a;
   --color-surface-container-highest: #dee4da;
   --color-on-tertiary-fixed-variant: #474747;
@@ -33,7 +33,7 @@
   --color-secondary: #bb0013;
   --color-on-tertiary-container: #fffcfb;
   --color-tertiary-container: #757474;
-  --color-inverse-primary: #69dd86;
+  --color-inverse-primary: #f7a61c;
   --color-performance-red: #ed1c24;
   --color-surface-bright: #f5fbf1;
   --color-secondary-container: #e71520;
@@ -42,21 +42,21 @@
   --color-on-primary-container: #f7fff3;
   --color-tertiary-fixed: #e4e2e1;
   --color-on-secondary-fixed-variant: #93000d;
-  --color-industrial-green: #009144;
+  --color-industrial-green: #f7a61c;
   --color-error: #ba1a1a;
   --color-on-primary: #ffffff;
-  --color-primary: #006b30;
+  --color-primary: #f7a61c;
   --color-surface: #f5fbf1;
   --color-on-tertiary-fixed: #1b1c1c;
   --color-border-muted: #d1d5db;
   --color-surface-container-high: #e3eae0;
   --color-inverse-on-surface: #ecf3e8;
-  --color-surface-tint: #006d32;
-  --color-primary-fixed-dim: #69dd86;
+  --color-surface-tint: #f7a61c;
+  --color-primary-fixed-dim: #f7a61c;
   --color-tertiary: #5c5c5c;
   --color-secondary-fixed-dim: #ffb4ab;
   --color-on-secondary-fixed: #410002;
-  --color-primary-container: #00873f;
+  --color-primary-container: #f7a61c;
 
   --radius-default: 0.125rem;
   --radius-lg: 0.25rem;

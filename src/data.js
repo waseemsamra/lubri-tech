@@ -1,84 +1,102 @@
 export const IMAGES = {
   hero:
-    "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=2000&q=80",
+    "/images/business.jpg",
   business:
-    "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1400&q=80",
+    "/images/industrial.jpg",
   motorists:
-    "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80",
+    "/images/automotive.jpg",
   sustainability:
-    "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=2000&q=80",
+    "/images/sustainability.jpg",
   industriesHero:
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2000&q=80",
+    "/images/servicesHero.jpg",
   automotive:
-    "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80",
+    "/images/automotive.jpg",
   marine:
-    "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1400&q=80",
+    "/images/marine.jpg",
   aerospace:
-    "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=80",
+    "/images/aerospace.jpg",
   industrial:
-    "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1400&q=80",
+    "/images/industrial.jpg",
   fleet:
-    "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1400&q=80",
+    "/images/fleet.jpg",
   productsHero:
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2000&q=80",
+    "/images/servicesHero.jpg",
   catalogMotorOil:
-    "https://images.unsplash.com/photo-1620853945668-40e3b7b4b8a6?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogMotorOil.jpg",
   catalogTruck:
-    "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogTruck.jpg",
   catalogGear:
-    "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=800&q=80",
+    "/images/industrial.jpg",
   catalogHydraulic:
-    "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogHydraulic.jpg",
   catalogAntifreeze:
-    "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80",
+    "/images/serviceAudit.jpg",
   aboutHero:
-    "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=2000&q=80",
+    "/images/industrial.jpg",
   globalMap:
-    "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=2000&q=80",
+    "/images/globalMap.jpg",
   servicesHero:
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2000&q=80",
+    "/images/servicesHero.jpg",
   serviceFluid:
-    "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80",
+    "/images/serviceAudit.jpg",
   serviceAudit:
-    "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=800&q=80",
+    "/images/industrial.jpg",
   serviceTraining:
-    "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
+    "/images/business.jpg",
   serviceAuto:
-    "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogHydraulic.jpg",
   serviceSustain:
-    "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=800&q=80",
+    "/images/sustainReport.jpg",
   serviceRemote:
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "/images/serviceRemote.jpg",
   sustainabilityHero:
-    "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=2000&q=80",
+    "/images/sustainability.jpg",
   sustainWater:
-    "https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&w=800&q=80",
+    "/images/sustainWater.jpg",
   ecoProduct1:
-    "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogHydraulic.jpg",
   ecoProduct2:
-    "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80",
+    "/images/ecoProduct2.jpg",
   ecoProduct3:
-    "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80",
+    "/images/serviceAudit.jpg",
   sustainReport:
-    "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=800&q=80",
+    "/images/sustainReport.jpg",
   oilCan:
-    "https://images.unsplash.com/photo-1620853945668-40e3b7b4b8a6?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogMotorOil.jpg",
   grease:
-    "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogTruck.jpg",
   eco:
-    "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80",
+    "/images/serviceAudit.jpg",
   productMobil:
-    "https://images.unsplash.com/photo-1620853945668-40e3b7b4b8a6?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogMotorOil.jpg",
   productRotella:
-    "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogTruck.jpg",
   productValvoline:
-    "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80",
+    "/images/serviceAudit.jpg",
   productCastrol:
-    "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80",
+    "/images/catalogHydraulic.jpg",
   productDrum:
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    "/images/servicesHero.jpg",
   productPail:
-    "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=800&q=80",
+    "/images/industrial.jpg",
+  hydraulicHero:
+    "/images/hydraulicHero.jpg",
+  hydraulicOxidation:
+    "/images/hydraulicOxidation.jpg",
+  antifreezeHero:
+    "/images/antifreezeHero.jpg",
+  antifreezeCorrosion:
+    "/images/antifreezeCorrosion.jpg",
+  gearHero:
+    "/images/gearHero.jpg",
+  gearHypoid:
+    "/images/gearHypoid.jpg",
+  gearManual:
+    "/images/gearManual.jpg",
+  gearAuto:
+    "/images/gearAuto.jpg",
+  gearAxle:
+    "/images/gearAxle.jpg",
 };
 
 export const INDUSTRIES = [
@@ -426,11 +444,11 @@ export const NAV_LINKS = [
 ];
 
 export const ADVISORY_SUBMENUS = [
-  { label: "Car Motor Oil Info", slug: "synth-pro-5w-30" },
-  { label: "Truck Motor Oil Info", slug: "truck-force-10w-40" },
-  { label: "Gear Oil Info", slug: "gear-trans-gl-5" },
-  { label: "Hydraulic Oil Info", slug: "hydra-hlp-46" },
-  { label: "Antifreeze Info", slug: "frost-protect-g12" },
+  { label: "Car Motor Oil Info", slug: "car-motor-oil", route: "/technical-advisory" },
+  { label: "Truck Motor Oil Info", slug: "truck-force-10w-40", route: "/heavy-duty-fleet" },
+  { label: "Gear Oil Info", slug: "gear-trans-gl-5", route: "/gear-oil" },
+  { label: "Hydraulic Oil Info", slug: "hydra-hlp-46", route: "/hydraulic-oil" },
+  { label: "Antifreeze Info", slug: "frost-protect-g12", route: "/antifreeze" },
 ];
 
 export const SERVICES = [

@@ -1,7 +1,5 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { IMAGES, PRODUCTS, getProductDetail, FOOTER_COLUMNS } from "../data";
-import Footer from "../components/Footer";
-
+import { IMAGES, PRODUCTS, getProductDetail } from "../data";
 function Icon({ name, className = "" }) {
   const filled = name === "shield" || name === "speed" || name === "science" || name === "build";
   return (
@@ -269,7 +267,6 @@ export default function ProductView() {
         <SpecsSection detail={detail} />
         <RelatedSection detail={detail} />
       </main>
-      <Footer columns={FOOTER_COLUMNS} />
     </>
   );
 }

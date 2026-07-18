@@ -27,16 +27,18 @@ function AdvisoryMenu() {
         <Icon name="expand_more" className="text-[18px]" />
       </button>
       {open && (
-        <div className="absolute left-0 top-full z-50 mt-2 w-60 rounded-lg border border-outline-variant bg-surface py-2 shadow-xl">
-          {ADVISORY_SUBMENUS.map((item) => (
-            <Link
-              key={item.label}
-              to={`/products/${item.slug}`}
-              className="block px-4 py-2 font-body-md text-on-surface transition-colors hover:bg-surface-container-low hover:text-primary"
-            >
-              {item.label}
-            </Link>
-          ))}
+        <div className="absolute left-0 top-full z-50 w-60 pt-2">
+          <div className="rounded-lg border border-outline-variant bg-surface py-2 shadow-xl">
+            {ADVISORY_SUBMENUS.map((item) => (
+              <Link
+                key={item.label}
+                to={item.route || `/products/${item.slug}`}
+                className="block px-4 py-2 font-body-md text-on-surface transition-colors hover:bg-surface-container-low hover:text-primary"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </div>
@@ -133,7 +135,7 @@ export default function Header() {
                     {ADVISORY_SUBMENUS.map((item) => (
                       <Link
                         key={item.label}
-                        to={`/products/${item.slug}`}
+                        to={item.route || `/products/${item.slug}`}
                         onClick={() => setMenuOpen(false)}
                         className="block py-1 font-body-md text-on-surface-variant transition-colors hover:text-primary"
                       >

@@ -12,6 +12,11 @@ import ProductView from "./pages/ProductView";
 import About from "./pages/About";
 import ServicesPage from "./pages/Services";
 import SustainabilityPage from "./pages/Sustainability";
+import TechnicalAdvisory from "./pages/TechnicalAdvisory";
+import HeavyDutyFleet from "./pages/HeavyDutyFleet";
+import HydraulicOil from "./pages/HydraulicOil";
+import Antifreeze from "./pages/Antifreeze";
+import GearOil from "./pages/GearOil";
 
 function Home() {
   return (
@@ -21,7 +26,6 @@ function Home() {
       <Services />
       <Sustainability />
       <ProductFinder />
-      <Footer />
     </main>
   );
 }
@@ -38,7 +42,13 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/sustainability" element={<SustainabilityPage />} />
+        <Route path="/technical-advisory" element={<TechnicalAdvisory />} />
+        <Route path="/heavy-duty-fleet" element={<HeavyDutyFleet />} />
+        <Route path="/hydraulic-oil" element={<HydraulicOil />} />
+        <Route path="/antifreeze" element={<Antifreeze />} />
+        <Route path="/gear-oil" element={<GearOil />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

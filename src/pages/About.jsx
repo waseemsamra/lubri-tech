@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
-import { IMAGES, FOOTER_COLUMNS } from "../data";
-import Footer from "../components/Footer";
-
+import { IMAGES } from "../data";
 function Icon({ name, className = "" }) {
   const filled = ["check_circle", "flag", "public", "eco", "rocket_launch"].includes(name);
   return (
@@ -322,7 +320,6 @@ export default function About() {
       <GlobalPresence />
       <Timeline />
       <CTA />
-      <Footer columns={FOOTER_COLUMNS} />
     </main>
   );
 }

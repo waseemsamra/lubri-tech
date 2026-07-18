@@ -3,9 +3,7 @@ import {
   SUSTAIN_PILLARS,
   SUSTAIN_ECO_PRODUCTS,
   SUSTAIN_IMPACT,
-  SUSTAINABILITY_FOOTER,
 } from "../data";
-import Footer from "../components/Footer";
 
 function Icon({ name, className = "", filled = false }) {
   return (
@@ -325,7 +323,6 @@ export default function Sustainability() {
       <EcoProducts />
       <ImpactTable />
       <CTA />
-      <Footer columns={SUSTAINABILITY_FOOTER} />
     </main>
   );
 }

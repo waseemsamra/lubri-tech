@@ -1,6 +1,4 @@
-import { IMAGES, SERVICE_STATS, SERVICE_CARDS, SERVICE_PROTOCOLS, FOOTER_COLUMNS } from "../data";
-import Footer from "../components/Footer";
-
+import { IMAGES, SERVICE_STATS, SERVICE_CARDS, SERVICE_PROTOCOLS } from "../data";
 function Icon({ name, className = "" }) {
   return (
     <span className={`material-symbols-outlined ${className}`} data-icon={name}>
@@ -206,7 +204,6 @@ export default function ServicesPage() {
       <ServiceCards />
       <ProtocolsTable />
       <CTA />
-      <Footer columns={FOOTER_COLUMNS} />
     </main>
   );
 }
