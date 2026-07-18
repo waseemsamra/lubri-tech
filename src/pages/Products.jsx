@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import {
   IMAGES,
   PRODUCTS,
@@ -53,33 +54,52 @@ function CatalogHero() {
 }
 
 function FilterSidebar() {
+  const [expanded, setExpanded] = useState({});
   return (
     <aside className="w-full flex-shrink-0 space-y-8 lg:w-72">
-      {CATALOG_FILTERS.map((group) => (
-        <div key={group.title}>
-          <h3 className="mb-4 font-label-bold text-label-bold uppercase tracking-widest text-on-surface-variant">
-            {group.title}
-          </h3>
-          <div className="space-y-3">
-            {group.options.map((opt, i) => (
-              <label
-                key={opt}
-                className="group flex cursor-pointer items-center gap-3"
+      {CATALOG_FILTERS.map((group) => {
+        const isCollapsible = group.collapsible;
+        const visibleCount = group.initialVisible || group.options.length;
+        const isOpen = expanded[group.title];
+        const shown = isCollapsible && !isOpen
+          ? group.options.slice(0, visibleCount)
+          : group.options;
+        return (
+          <div key={group.title}>
+            <h3 className="mb-4 font-label-bold text-label-bold uppercase tracking-widest text-on-surface-variant">
+              {group.title}
+            </h3>
+            <div className="space-y-3">
+              {shown.map((opt, i) => (
+                <label
+                  key={opt}
+                  className="group flex cursor-pointer items-center gap-3"
+                >
+                  <input
+                    type={group.isCategory ? "radio" : "checkbox"}
+                    defaultChecked={group.isCategory && i === 0}
+                    name={group.isCategory ? "category" : undefined}
+                    className="h-5 w-5 border-outline text-industrial-green focus:ring-industrial-green"
+                  />
+                  <span className="font-body-md text-on-surface transition-colors group-hover:text-primary">
+                    {opt}
+                  </span>
+                </label>
+              ))}
+            </div>
+            {isCollapsible && group.options.length > visibleCount && (
+              <button
+                onClick={() =>
+                  setExpanded((prev) => ({ ...prev, [group.title]: !prev[group.title] }))
+                }
+                className="mt-3 font-label-bold text-label-bold text-industrial-green hover:underline"
               >
-                <input
-                  type={group.isCategory ? "radio" : "checkbox"}
-                  defaultChecked={group.isCategory && i === 0}
-                  name={group.isCategory ? "category" : undefined}
-                  className="h-5 w-5 border-outline text-industrial-green focus:ring-industrial-green"
-                />
-                <span className="font-body-md text-on-surface transition-colors group-hover:text-primary">
-                  {opt}
-                </span>
-              </label>
-            ))}
+                {isOpen ? "Show less" : `Show more (${group.options.length - visibleCount})`}
+              </button>
+            )}
           </div>
-        </div>
-      ))}
+        );
+      })}
 
       <div className="rounded-lg border border-outline-variant bg-surface-container p-6">
         <Icon name="description" className="mb-4 text-industrial-green" />

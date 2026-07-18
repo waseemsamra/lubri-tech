@@ -34,7 +34,7 @@ function ProductHero({ product, detail }) {
       </div>
 
       <div className="flex flex-col">
-        <h1 className="mb-4 font-display-lg text-display-lg text-on-surface">
+        <h1 className="mb-4 whitespace-nowrap font-headline-lg text-headline-lg font-extrabold text-on-surface">
           {detail.title}
         </h1>
         <p className="mb-8 font-body-lg text-body-lg leading-relaxed text-on-surface-variant">
