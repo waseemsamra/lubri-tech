@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { NAV_LINKS, ADVISORY_SUBMENUS } from "../data";
+import { NAV_LINKS, ADVISORY_SUBMENUS, BUSINESS_SUBMENUS } from "../data";
 
 const ROUTES = {
   Products: "/products",
@@ -8,6 +8,7 @@ const ROUTES = {
   Services: "/services",
   Sustainability: "/sustainability",
   About: "/about",
+  "Business Customers": "/b2b-customers",
 };
 
 function Icon({ name, className = "" }) {
@@ -33,6 +34,37 @@ function AdvisoryMenu() {
               <Link
                 key={item.label}
                 to={item.route || `/products/${item.slug}`}
+                className="block px-4 py-2 font-body-md text-on-surface transition-colors hover:bg-surface-container-low hover:text-primary"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function BusinessMenu() {
+  const [open, setOpen] = useState(false);
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button className="flex items-center gap-1 whitespace-nowrap font-label-bold text-label-bold text-on-surface-variant transition-colors duration-200 hover:text-primary">
+        Business Customers
+        <Icon name="expand_more" className="text-[18px]" />
+      </button>
+      {open && (
+        <div className="absolute left-0 top-full z-50 w-60 pt-2">
+          <div className="rounded-lg border border-outline-variant bg-surface py-2 shadow-xl">
+            {BUSINESS_SUBMENUS.map((item) => (
+              <Link
+                key={item.label}
+                to={item.route}
                 className="block px-4 py-2 font-body-md text-on-surface transition-colors hover:bg-surface-container-low hover:text-primary"
               >
                 {item.label}
@@ -87,20 +119,15 @@ export default function Header() {
             LUBRI-TECH
           </Link>
           <div className="hidden items-center gap-4 md:flex">
-            {NAV_LINKS.map((link) =>
-              link === "Product Advisory" ? <AdvisoryMenu key={link} /> : renderNavItem(link)
-            )}
+            {NAV_LINKS.map((link) => {
+              if (link === "Product Advisory") return <AdvisoryMenu key={link} />;
+              if (link === "Business Customers") return <BusinessMenu key={link} />;
+              return renderNavItem(link);
+            })}
           </div>
         </div>
 
         <div className="flex flex-shrink-0 items-center gap-4">
-          <div className="hidden items-center rounded bg-surface-container-low px-4 py-2 shadow-inner lg:flex">
-            <Icon name="search" className="text-[20px] text-outline" />
-            <input
-              className="w-48 border-none bg-transparent text-body-sm focus:ring-0"
-              placeholder="Search tech specs..."
-            />
-          </div>
           <button
             aria-label="Language"
             className="rounded-full p-2 text-on-surface-variant transition-colors hover:bg-surface-container-highest"
@@ -136,6 +163,25 @@ export default function Header() {
                       <Link
                         key={item.label}
                         to={item.route || `/products/${item.slug}`}
+                        onClick={() => setMenuOpen(false)}
+                        className="block py-1 font-body-md text-on-surface-variant transition-colors hover:text-primary"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            }
+            if (link === "Business Customers") {
+              return (
+                <div key={link} className="py-2">
+                  <p className="font-label-bold text-label-bold text-on-surface">Business Customers</p>
+                  <div className="mt-1 pl-4">
+                    {BUSINESS_SUBMENUS.map((item) => (
+                      <Link
+                        key={item.label}
+                        to={item.route}
                         onClick={() => setMenuOpen(false)}
                         className="block py-1 font-body-md text-on-surface-variant transition-colors hover:text-primary"
                       >

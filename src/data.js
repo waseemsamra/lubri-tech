@@ -513,6 +513,7 @@ export const NAV_LINKS = [
   "Services",
   "Sustainability",
   "About",
+  "Business Customers",
 ];
 
 export const ADVISORY_SUBMENUS = [
@@ -521,6 +522,11 @@ export const ADVISORY_SUBMENUS = [
   { label: "Gear Oil Info", slug: "gear-trans-gl-5", route: "/gear-oil" },
   { label: "Hydraulic Oil Info", slug: "hydra-hlp-46", route: "/hydraulic-oil" },
   { label: "Antifreeze Info", slug: "frost-protect-g12", route: "/antifreeze" },
+];
+
+export const BUSINESS_SUBMENUS = [
+  { label: "B2B Customers", route: "/b2b-customers" },
+  { label: "International Customers", route: "/international" },
 ];
 
 export const SERVICES = [

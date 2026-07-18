@@ -17,6 +17,8 @@ import HeavyDutyFleet from "./pages/HeavyDutyFleet";
 import HydraulicOil from "./pages/HydraulicOil";
 import Antifreeze from "./pages/Antifreeze";
 import GearOil from "./pages/GearOil";
+import B2BCustomers from "./pages/B2BCustomers";
+import International from "./pages/International";
 
 function Home() {
   return (
@@ -47,6 +49,8 @@ export default function App() {
         <Route path="/hydraulic-oil" element={<HydraulicOil />} />
         <Route path="/antifreeze" element={<Antifreeze />} />
         <Route path="/gear-oil" element={<GearOil />} />
+        <Route path="/b2b-customers" element={<B2BCustomers />} />
+        <Route path="/international" element={<International />} />
       </Routes>
       <Footer />
     </BrowserRouter>
